@@ -1,6 +1,5 @@
 import {
   GithubIcon,
-  Space,
   StyledButton,
   StyledLink,
   StyledNav,
@@ -28,7 +27,6 @@ export const PortfolioNav = () => {
           <GithubIcon />
         </StyledLink>
       </StyledNav>
-      <Space />
     </MediaQuery>
   );
 };

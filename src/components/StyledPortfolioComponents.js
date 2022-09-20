@@ -84,6 +84,10 @@ export const StyledTextContainer = styled.div`
   align-items: flex-start;
   padding: 10px;
   gap: 3em;
+  @media (max-width: 810px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const StyledH2 = styled.h2`
@@ -126,7 +130,7 @@ export const StyledDivProject = styled.div`
 export const StyledH3 = styled.h3`
   font-style: normal;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 1rem;
   line-height: 56px;
   margin: 0;
 `;
@@ -139,6 +143,9 @@ export const StyledProjectShowcase = styled.div`
 export const StyledImg = styled.img`
   width: 70%;
   margin: 0 auto;
+  @media (max-width: 810px) {
+    width: 100%;
+  }
 `;
 
 export const StyledPFooter = styled.p`
@@ -178,6 +185,9 @@ export const StyledButton = styled(Link)`
 
 export const Space = styled.div`
   padding: 5em;
+  @media (max-width: 810px) {
+    padding: 0;
+  }
 `;
 
 export const TestImg = styled.img`
@@ -188,7 +198,7 @@ export const IconTextDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 5em;
 `;
 

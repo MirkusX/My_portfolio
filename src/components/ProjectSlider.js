@@ -17,6 +17,14 @@ export const ProjectSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 810,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   };
   return (
     <Slider {...settings}>

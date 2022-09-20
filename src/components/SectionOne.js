@@ -7,7 +7,7 @@ import {
   StyledTextContainer,
   TestImg,
 } from "./StyledPortfolioComponents";
-import djcoolsunglasses from "../images/djcoolsunglasses.png";
+import portraittest from "../images/portraittest.jpg";
 
 export const SectionOne = () => {
   return (
@@ -15,7 +15,7 @@ export const SectionOne = () => {
       <StyledDivOne>
         <StyledDivInsideOne>
           <StyledTextContainer>
-            <TestImg src={djcoolsunglasses}></TestImg>
+            <TestImg src={portraittest}></TestImg>
             <div>
               <StyledH1>Hi</StyledH1>
               <StyledP>I am a FRONT-END student from Antartica</StyledP>

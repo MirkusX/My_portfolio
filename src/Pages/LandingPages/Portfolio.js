@@ -4,12 +4,13 @@ import { Space, StyledBody } from "../../components/StyledPortfolioComponents";
 import { SectionTwo } from "../../components/SectionTwo";
 import { SectionThree } from "../../components/SectionThree";
 import { Footer } from "../../components/Footer";
-import { MobileNav } from "../../components/MobileNav";
+import { BurgerMenu } from "../../components/BurgerMenu";
 export const Portfolio = () => {
   return (
     <StyledBody>
       <PortfolioNav />
-      <MobileNav />
+      <BurgerMenu />
+      <Space />
       <SectionOne />
       <Space />
       <SectionTwo />
