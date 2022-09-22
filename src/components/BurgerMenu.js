@@ -1,21 +1,69 @@
+import { useState } from "react";
 import { slide as Menu } from "react-burger-menu";
 import MediaQuery from "react-responsive";
+import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
+import { StyledButton } from "./StyledPortfolioComponents";
 
 export const BurgerMenu = () => {
+  const [isOpen, setOpen] = useState(false);
+  const OpenMenu = () => {
+    setOpen(!isOpen);
+  };
+  const CloseMenu = () => {
+    setOpen(false);
+  };
+  const { NAVBAR } = PORTFOLIO_TEXT;
   return (
     <MediaQuery maxWidth={810}>
-      <Menu styles={styles}>
+      <Menu
+        styles={styles}
+        isOpen={isOpen}
+        onOpen={OpenMenu}
+        onClose={CloseMenu}
+      >
         <div>
-          <p>Home</p>
+          <StyledButton
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            onClick={CloseMenu}
+          >
+            {NAVBAR.NAVBAR_1}
+          </StyledButton>
         </div>
         <div>
-          <p>About</p>
+          <StyledButton
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            onClick={CloseMenu}
+          >
+            {NAVBAR.NAVBAR_2}
+          </StyledButton>
         </div>
         <div>
-          <p>Projects</p>
+          <StyledButton
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            onClick={CloseMenu}
+          >
+            {NAVBAR.NAVBAR_3}
+          </StyledButton>
         </div>
         <div>
-          <p>Contact</p>
+          <StyledButton
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            onClick={CloseMenu}
+          >
+            {NAVBAR.NAVBAR_4}
+          </StyledButton>
         </div>
       </Menu>
     </MediaQuery>

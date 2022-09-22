@@ -1,15 +1,15 @@
 import { StyledFooter, StyledPFooter } from "./StyledPortfolioComponents";
 import { AiFillGithub } from "react-icons/ai";
 import { FaDiscord } from "react-icons/fa";
+import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
 
 export const Footer = () => {
+  const { FOOTER } = PORTFOLIO_TEXT;
   return (
     <StyledFooter id="contact">
-      <StyledPFooter>A page by Marcus</StyledPFooter>
-      <StyledPFooter>|</StyledPFooter>
-      <StyledPFooter>Contact me at</StyledPFooter>
-      <AiFillGithub style={{ width: "24px", height: "24px" }} />
-      <FaDiscord style={{ width: "24px", height: "24px" }} />
+      <StyledPFooter>{FOOTER.FOOTER_PAGE_BY}</StyledPFooter>
+      <AiFillGithub />
+      <FaDiscord />
     </StyledFooter>
   );
 };

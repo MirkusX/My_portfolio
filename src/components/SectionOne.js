@@ -8,8 +8,10 @@ import {
   TestImg,
 } from "./StyledPortfolioComponents";
 import portraittest from "../images/portraittest.jpg";
+import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
 
 export const SectionOne = () => {
+  const { SECTION_ONE } = PORTFOLIO_TEXT;
   return (
     <StyledSectionOne id="home">
       <StyledDivOne>
@@ -17,8 +19,8 @@ export const SectionOne = () => {
           <StyledTextContainer>
             <TestImg src={portraittest}></TestImg>
             <div>
-              <StyledH1>Hi</StyledH1>
-              <StyledP>I am a FRONT-END student from Antartica</StyledP>
+              <StyledH1>{SECTION_ONE.GREETING}</StyledH1>
+              <StyledP>{SECTION_ONE.SMALL_INTRO}</StyledP>
             </div>
           </StyledTextContainer>
         </StyledDivInsideOne>

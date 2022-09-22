@@ -6,6 +6,21 @@ import { SiJavascript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 
+export const ProjectLink = styled.a`
+  background: darkblue;
+  cursor: pointer;
+  width: 25%;
+  padding: 0.5em;
+  text-decoration: none;
+`;
+
+export const ProjectDiv = styled.div``;
+
+export const ProjectP = styled.p`
+  font-size: 0.7rem;
+  color: white;
+`;
+
 export const StyledNav = styled.nav`
   display: flex;
   flex-direction: row;
@@ -151,8 +166,6 @@ export const StyledImg = styled.img`
 export const StyledPFooter = styled.p`
   font-style: normal;
   font-size: 0.75rem;
-  line-height: 15px;
-
   color: rgba(255, 255, 255, 0.5);
 `;
 

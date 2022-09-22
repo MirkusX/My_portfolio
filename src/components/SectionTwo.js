@@ -11,17 +11,18 @@ import {
   StyledSectionTwo,
 } from "./StyledPortfolioComponents";
 
+import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
+
+const { SECTION_TWO } = PORTFOLIO_TEXT;
+
 export const SectionTwo = () => {
   return (
     <StyledSectionTwo>
       <StyledDivInsideDarkBlue id="about">
         <IconTextDiv>
           <div>
-            <StyledH2>About</StyledH2>
-            <StyledP>
-              I am a FRONT-END student working with HTML, CSS, JS, TypeScript
-              and React
-            </StyledP>
+            <StyledH2>{SECTION_TWO.ABOUT_TITLE}</StyledH2>
+            <StyledP>{SECTION_TWO.ABOUT_DESCRIPTION}</StyledP>
           </div>
           <IconDiv>
             <HtmlIcon />
