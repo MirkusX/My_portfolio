@@ -5,25 +5,26 @@ import {
   IconTextDiv,
   JavascriptIcon,
   ReactIcon,
-  StyledDivInsideDarkBlue,
+  StyledDivOne,
   StyledH2,
-  StyledP,
-  StyledSectionTwo,
+  StyledSection,
 } from "./StyledPortfolioComponents";
-
 import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
 
-const { SECTION_TWO } = PORTFOLIO_TEXT;
+import { Collapisble } from "./Collapsible";
+import { CollapisbleOne } from "./CollapsibleOne";
+import { CollapisbleTwo } from "./CollapsibleTwo";
 
 export const SectionTwo = () => {
+  const { SECTION_TWO } = PORTFOLIO_TEXT;
   return (
-    <StyledSectionTwo>
-      <StyledDivInsideDarkBlue id="about">
+    <StyledSection>
+      <StyledDivOne blue id="about">
+        <StyledH2>{SECTION_TWO.ABOUT_TITLE}</StyledH2>
         <IconTextDiv>
-          <div>
-            <StyledH2>{SECTION_TWO.ABOUT_TITLE}</StyledH2>
-            <StyledP>{SECTION_TWO.ABOUT_DESCRIPTION}</StyledP>
-          </div>
+          <Collapisble />
+          <CollapisbleOne />
+          <CollapisbleTwo />
           <IconDiv>
             <HtmlIcon />
             <CssIcon />
@@ -31,7 +32,7 @@ export const SectionTwo = () => {
             <ReactIcon />
           </IconDiv>
         </IconTextDiv>
-      </StyledDivInsideDarkBlue>
-    </StyledSectionTwo>
+      </StyledDivOne>
+    </StyledSection>
   );
 };

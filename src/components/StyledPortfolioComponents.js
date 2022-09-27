@@ -1,10 +1,56 @@
 import styled from "styled-components";
+import Slider from "react-slick";
 import { Link } from "react-scroll";
 import { AiFillGithub, AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+
+export const CollapsibleTextDiv = styled.div`
+  background-color: #001523;
+  border-radius: 5px;
+  padding: ${(props) => (props.ease ? "0.5em 0.5em" : "0")};
+  max-height: ${(props) => (props.ease ? "400px" : "0")};
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+`;
+
+export const CollapsibleDiv = styled.div`
+  width: 70%;
+  height: auto;
+`;
+
+export const CollapsibleButton = styled.button`
+  background-color: inherit;
+  border: white 1px solid;
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
+  width: 100%;
+  &:after {
+    content: " ↓ ";
+  }
+`;
+
+export const StyledBurgerLink = styled.a`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  background: #00111c;
+  cursor: pointer;
+  &:hover {
+    background-color: #00406c;
+  }
+`;
+
+export const StyledSlider = styled(Slider)`
+  width: 70%;
+  margin: 0 auto;
+`;
 
 export const ProjectLink = styled.a`
   background: darkblue;
@@ -13,8 +59,6 @@ export const ProjectLink = styled.a`
   padding: 0.5em;
   text-decoration: none;
 `;
-
-export const ProjectDiv = styled.div``;
 
 export const ProjectP = styled.p`
   font-size: 0.7rem;
@@ -28,11 +72,17 @@ export const StyledNav = styled.nav`
   align-items: center;
   padding: 0px 0px 0px 10px;
   gap: 10px;
-  position: fixed;
   width: 100%;
   background: #00111c;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  z-index: 99;
+  ${(props) => {
+    if (props.ontop) {
+      return `
+      z-index: 99;
+      position: fixed;
+      `;
+    }
+  }}
 `;
 
 export const StyledLink = styled.a`
@@ -56,13 +106,17 @@ export const StyledBody = styled.div`
   overflow-x: hidden;
 `;
 
-export const StyledSectionOne = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 100px;
-  gap: 10px;
+export const StyledSection = styled.section`
+  ${(props) => {
+    if (props.project)
+      return `
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    margin-top: 1em;
+`;
+  }}
 `;
 
 export const StyledDivOne = styled.div`
@@ -70,26 +124,20 @@ export const StyledDivOne = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 100px;
+  padding: 1em 0;
   gap: 10px;
-`;
-
-export const StyledDivInsideOne = styled.div``;
-
-export const StyledSectionTwo = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1em 5em;
-  gap: 10px;
+  ${(props) => {
+    if (props.blue) {
+      return `
+      box-sizing: content-box;
+       background-color: #001a2c;
+       width: 100%;`;
+    }
+  }}
 `;
 
 export const StyledH1 = styled.h1`
-  font-style: normal;
-  font-weight: 400;
   font-size: 8rem;
-  line-height: 150px;
   margin: 0;
 `;
 
@@ -106,47 +154,17 @@ export const StyledTextContainer = styled.div`
 `;
 
 export const StyledH2 = styled.h2`
-  font-style: normal;
-  font-weight: 400;
   font-size: 4rem;
-  line-height: 75px;
+  margin: 0;
 `;
 
 export const StyledP = styled.p`
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 38px;
+  font-size: ${(props) => (props.about ? "1.5rem" : "2rem")};
   color: gray;
 `;
 
-export const StyledDivInsideDarkBlue = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1em 5.152em;
-  gap: 10px;
-  background-color: #001a2c;
-`;
-
-export const StyledSectionProject = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 100px;
-  gap: 10px;
-`;
-
-export const StyledDivProject = styled.div`
-  padding: 1em 5em;
-`;
-
 export const StyledH3 = styled.h3`
-  font-style: normal;
-  font-weight: 400;
   font-size: 1rem;
-  line-height: 56px;
   margin: 0;
 `;
 
@@ -156,28 +174,12 @@ export const StyledProjectShowcase = styled.div`
 `;
 
 export const StyledImg = styled.img`
-  width: 70%;
-  margin: 0 auto;
-  @media (max-width: 810px) {
-    width: 100%;
-  }
+  width: inherit;
 `;
 
 export const StyledPFooter = styled.p`
-  font-style: normal;
-  font-size: 0.75rem;
+  font-size: ${(props) => (props.project ? "1rem" : "0.75rem")};
   color: rgba(255, 255, 255, 0.5);
-`;
-
-export const StyledFooter = styled.nav`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  background: #00111c;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 export const StyledButton = styled(Link)`
@@ -209,21 +211,18 @@ export const TestImg = styled.img`
 
 export const IconTextDiv = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 5em;
+  width: 100%;
 `;
 
 export const IconDiv = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-content: space-between;
   gap: 5em;
-`;
-
-export const StyledPProjectTitle = styled.p`
-  font-size: 16px;
-  color: gray;
 `;
 
 export const HtmlIcon = styled(AiFillHtml5)`

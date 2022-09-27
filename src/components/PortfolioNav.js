@@ -12,7 +12,7 @@ export const PortfolioNav = () => {
   const { NAVBAR } = PORTFOLIO_TEXT;
   return (
     <MediaQuery minWidth={811}>
-      <StyledNav>
+      <StyledNav ontop>
         <StyledButton to="home" spy={true} smooth={true} offset={-100}>
           {NAVBAR.NAVBAR_1}
         </StyledButton>

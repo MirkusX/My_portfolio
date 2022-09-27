@@ -1,9 +1,8 @@
 import {
-  StyledDivInsideOne,
   StyledDivOne,
   StyledH1,
   StyledP,
-  StyledSectionOne,
+  StyledSection,
   StyledTextContainer,
   TestImg,
 } from "./StyledPortfolioComponents";
@@ -13,9 +12,9 @@ import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/Portf
 export const SectionOne = () => {
   const { SECTION_ONE } = PORTFOLIO_TEXT;
   return (
-    <StyledSectionOne id="home">
+    <StyledSection id="home">
       <StyledDivOne>
-        <StyledDivInsideOne>
+        <div>
           <StyledTextContainer>
             <TestImg src={portraittest}></TestImg>
             <div>
@@ -23,8 +22,8 @@ export const SectionOne = () => {
               <StyledP>{SECTION_ONE.SMALL_INTRO}</StyledP>
             </div>
           </StyledTextContainer>
-        </StyledDivInsideOne>
+        </div>
       </StyledDivOne>
-    </StyledSectionOne>
+    </StyledSection>
   );
 };

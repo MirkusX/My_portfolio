@@ -7,13 +7,13 @@ import unitconverternu from "../images/unitconverternu.png";
 import calculator from "../images/calculator.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import {
   ProjectDiv,
   ProjectLink,
   ProjectP,
   StyledImg,
   StyledPFooter,
+  StyledSlider,
 } from "./StyledPortfolioComponents";
 import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
 
@@ -35,75 +35,89 @@ export const ProjectSlider = () => {
     ],
   };
   return (
-    <Slider {...settings}>
-      <ProjectDiv>
+    <StyledSlider {...settings}>
+      <div>
         <StyledImg src={projectshowcase1} />
-        <ProjectP>{SECTION_THREE.PROJECT_SLIDE_TITLE_1}</ProjectP>
+        <StyledPFooter project>
+          {SECTION_THREE.PROJECT_SLIDE_TITLE_1}
+        </StyledPFooter>
         <ProjectLink href="https://mirkusx.github.io/albert-wesker-quote-generator/">
-          Visit
+          {SECTION_THREE.PROJECT_VISIT_BUTTON}
         </ProjectLink>
         <StyledPFooter>{SECTION_THREE.PROJECT_DESCRIPTION_REACT}</StyledPFooter>
-      </ProjectDiv>
-      <ProjectDiv>
+      </div>
+      <div>
         <StyledImg src={ratingsystem} />
-        <ProjectP>{SECTION_THREE.PROJECT_SLIDE_TITLE_2}</ProjectP>
+        <StyledPFooter project>
+          {SECTION_THREE.PROJECT_SLIDE_TITLE_2}
+        </StyledPFooter>
         <ProjectLink href=" https://mirkusx.github.io/rating5out5/ ">
-          Visit
+          {SECTION_THREE.PROJECT_VISIT_BUTTON}
         </ProjectLink>
         <StyledPFooter>
           {SECTION_THREE.PROJECT_DESCRIPTION_HTMLCSSJS}
         </StyledPFooter>
-      </ProjectDiv>
-      <ProjectDiv>
+      </div>
+      <div>
         <StyledImg src={todolist} />
-        <ProjectP>{SECTION_THREE.PROJECT_SLIDE_TITLE_3}</ProjectP>
+        <StyledPFooter project>
+          {SECTION_THREE.PROJECT_SLIDE_TITLE_3}
+        </StyledPFooter>
         <ProjectLink href=" https://mirkusx.github.io/todolist/">
-          Visit
+          {SECTION_THREE.PROJECT_VISIT_BUTTON}
         </ProjectLink>
         <StyledPFooter>
           {SECTION_THREE.PROJECT_DESCRIPTION_HTMLCSSJS}
         </StyledPFooter>
-      </ProjectDiv>
-      <ProjectDiv>
+      </div>
+      <div>
         <StyledImg src={drummachine} />
-        <ProjectP>{SECTION_THREE.PROJECT_SLIDE_TITLE_4}</ProjectP>
+        <StyledPFooter project>
+          {SECTION_THREE.PROJECT_SLIDE_TITLE_4}
+        </StyledPFooter>
         <ProjectLink href=" https://mirkusx.github.io/machine-drum/">
-          Visit
+          {SECTION_THREE.PROJECT_VISIT_BUTTON}
         </ProjectLink>
         <StyledPFooter>
           {SECTION_THREE.PROJECT_DESCRIPTION_HTMLCSSJS}
         </StyledPFooter>
-      </ProjectDiv>
-      <ProjectDiv>
+      </div>
+      <div>
         <StyledImg src={paulallen} />
-        <ProjectP>{SECTION_THREE.PROJECT_SLIDE_TITLE_5}</ProjectP>
+        <StyledPFooter project>
+          {SECTION_THREE.PROJECT_SLIDE_TITLE_5}
+        </StyledPFooter>
         <ProjectLink href="https://mirkusx.github.io/lets-see-paul-allens-business-card/">
-          Visit
+          {SECTION_THREE.PROJECT_VISIT_BUTTON}
         </ProjectLink>
         <StyledPFooter>
           {SECTION_THREE.PROJECT_DESCRIPTION_HTMLCSS}
         </StyledPFooter>
-      </ProjectDiv>
-      <ProjectDiv>
+      </div>
+      <div>
         <StyledImg src={unitconverternu} />
-        <ProjectP>{SECTION_THREE.PROJECT_SLIDE_TITLE_6}</ProjectP>
+        <StyledPFooter project>
+          {SECTION_THREE.PROJECT_SLIDE_TITLE_6}
+        </StyledPFooter>
         <ProjectLink href="https://mirkusx.github.io/unit-conversion-nu/">
-          Visit
+          {SECTION_THREE.PROJECT_VISIT_BUTTON}
         </ProjectLink>
         <StyledPFooter>
           {SECTION_THREE.PROJECT_DESCRIPTION_HTMLCSSJS}
         </StyledPFooter>
-      </ProjectDiv>
-      <ProjectDiv>
+      </div>
+      <div>
         <StyledImg src={calculator} />
-        <ProjectP>{SECTION_THREE.PROJECT_SLIDE_TITLE_7}</ProjectP>
+        <StyledPFooter project>
+          {SECTION_THREE.PROJECT_SLIDE_TITLE_7}
+        </StyledPFooter>
         <ProjectLink href=" https://mirkusx.github.io/calculator/">
-          Visit
+          {SECTION_THREE.PROJECT_VISIT_BUTTON}
         </ProjectLink>
         <StyledPFooter>
           {SECTION_THREE.PROJECT_DESCRIPTION_HTMLCSSJS}
         </StyledPFooter>
-      </ProjectDiv>
-    </Slider>
+      </div>
+    </StyledSlider>
   );
 };
