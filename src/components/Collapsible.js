@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
 import {
+  ArrowDown,
   CollapsibleButton,
   CollapsibleDiv,
   CollapsibleTextDiv,
-  StyledPFooter,
+  StyledP,
 } from "./StyledPortfolioComponents";
 
 export const Collapisble = () => {
@@ -13,14 +14,14 @@ export const Collapisble = () => {
   const ExpandDiv = () => {
     setExpand(!expand);
   };
-  console.log();
   return (
-    <CollapsibleDiv>
-      <CollapsibleButton onClick={() => ExpandDiv()}>
-        Litt om meg
+    <CollapsibleDiv onClick={() => ExpandDiv()}>
+      <CollapsibleButton>
+        <StyledP collapseTitle>{SECTION_TWO.ABOUT_COLLAPSIBLE_TITLE_1}</StyledP>
+        <ArrowDown speen={expand ? 180 : undefined} />
       </CollapsibleButton>
       <CollapsibleTextDiv ease={expand}>
-        <StyledPFooter>{SECTION_TWO.ABOUT_COLLAPSIBLE_1}</StyledPFooter>
+        <StyledP collapsible>{SECTION_TWO.ABOUT_COLLAPSIBLE_1}</StyledP>
       </CollapsibleTextDiv>
     </CollapsibleDiv>
   );

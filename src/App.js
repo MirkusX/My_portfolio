@@ -7,6 +7,7 @@ import { CounterContext } from "./Pages/LandingPages/LandingPagesFiles.js/Counte
 import { Portfolio } from "./Pages/LandingPages/Portfolio";
 import { useState } from "react";
 import { HiddenNav } from "./components/StyledComponents";
+import { FormPage } from "./components/FormPage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,12 +19,14 @@ function App() {
           <Route path="/Counter" element={<Counter />} />
           <Route path="/catFacts" element={<CatFacts />} />
           <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/FormPage" element={<FormPage />} />
         </Routes>
         <HiddenNav>
           <NavLink to="/CounterDisplay">Counter Display</NavLink>
           <NavLink to="/Counter">Counter</NavLink>
           <NavLink to="/catFacts">Cat Facts</NavLink>
           <NavLink to="/Portfolio">Portfolio</NavLink>
+          <NavLink to="/FormPage">Form</NavLink>
         </HiddenNav>
       </CounterContext.Provider>
     </div>

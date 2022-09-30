@@ -1,4 +1,10 @@
 import {
+  CssIcon,
+  HtmlIcon,
+  IconDiv,
+  InfoDiv,
+  JavascriptIcon,
+  ReactIcon,
   StyledDivOne,
   StyledH1,
   StyledP,
@@ -6,23 +12,28 @@ import {
   StyledTextContainer,
   TestImg,
 } from "./StyledPortfolioComponents";
-import portraittest from "../images/portraittest.jpg";
 import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
+import { Collapisble } from "./Collapsible";
 
 export const SectionOne = () => {
   const { SECTION_ONE } = PORTFOLIO_TEXT;
   return (
     <StyledSection id="home">
       <StyledDivOne>
-        <div>
-          <StyledTextContainer>
-            <TestImg src={portraittest}></TestImg>
-            <div>
-              <StyledH1>{SECTION_ONE.GREETING}</StyledH1>
-              <StyledP>{SECTION_ONE.SMALL_INTRO}</StyledP>
-            </div>
-          </StyledTextContainer>
-        </div>
+        <StyledTextContainer>
+          <TestImg src={SECTION_ONE.PORTFOLIO_IMAGE}></TestImg>
+          <InfoDiv>
+            <StyledH1>{SECTION_ONE.GREETING}</StyledH1>
+            <StyledP collapsible>{SECTION_ONE.SMALL_INTRO}</StyledP>
+            <Collapisble />
+            <IconDiv>
+              <HtmlIcon />
+              <CssIcon />
+              <JavascriptIcon />
+              <ReactIcon />
+            </IconDiv>
+          </InfoDiv>
+        </StyledTextContainer>
       </StyledDivOne>
     </StyledSection>
   );

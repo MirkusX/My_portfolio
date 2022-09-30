@@ -13,19 +13,33 @@ export const PortfolioNav = () => {
   return (
     <MediaQuery minWidth={811}>
       <StyledNav ontop>
-        <StyledButton to="home" spy={true} smooth={true} offset={-100}>
-          {NAVBAR.NAVBAR_1}
-        </StyledButton>
-        <StyledButton to="about" spy={true} smooth={true} offset={-150}>
+        <StyledButton
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          activeClass="active"
+        >
           {NAVBAR.NAVBAR_2}
         </StyledButton>
-        <StyledButton to="projects" spy={true} smooth={true} offset={-70}>
+        <StyledButton
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          activeClass="active"
+        >
           {NAVBAR.NAVBAR_3}
         </StyledButton>
-        <StyledButton to="contact" spy={true} smooth={true}>
+        <StyledButton
+          to="contact"
+          spy={true}
+          smooth={true}
+          activeClass="active"
+        >
           {NAVBAR.NAVBAR_4}
         </StyledButton>
-        <StyledLink>
+        <StyledLink navbar>
           <GithubIcon />
         </StyledLink>
       </StyledNav>

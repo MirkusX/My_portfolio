@@ -1,12 +1,12 @@
-import { useState } from "react";
-import { slide as Menu } from "react-burger-menu";
 import MediaQuery from "react-responsive";
+import { useState } from "react";
 import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
 import {
   GithubIcon,
   StyledBurgerLink,
   StyledButton,
 } from "./StyledPortfolioComponents";
+import { slide as Menu } from "react-burger-menu";
 
 export const BurgerMenu = () => {
   const { NAVBAR } = PORTFOLIO_TEXT;
@@ -20,7 +20,7 @@ export const BurgerMenu = () => {
     setOpen(false);
   };
   return (
-    <MediaQuery maxWidth={810}>
+    <MediaQuery maxWidth={811}>
       <Menu
         styles={styles}
         isOpen={isOpen}
@@ -36,17 +36,6 @@ export const BurgerMenu = () => {
             onClick={CloseMenu}
           >
             {NAVBAR.NAVBAR_1}
-          </StyledButton>
-        </div>
-        <div>
-          <StyledButton
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            onClick={CloseMenu}
-          >
-            {NAVBAR.NAVBAR_2}
           </StyledButton>
         </div>
         <div>
@@ -90,14 +79,14 @@ let styles = {
     top: "36px",
   },
   bmBurgerBars: {
-    background: "#373a47",
+    background: "white",
   },
   bmBurgerBarsHover: {
     background: "#a90000",
   },
   bmCrossButton: {
-    height: "24px",
-    width: "24px",
+    height: "16px",
+    width: "16px",
   },
   bmCross: {
     background: "#bdc3c7",
