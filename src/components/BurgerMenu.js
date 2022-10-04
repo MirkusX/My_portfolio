@@ -87,7 +87,7 @@ export const BurgerMenu = () => {
             onClick={CloseMenu}
             aria-label={ARIA.ARIA_NAV_SCROLL + NAVBAR.NAVBAR_2}
           >
-            {t("Nav Contact")}
+            {t("Nav Projects")}
           </StyledButton>
         </div>
         <div>
@@ -99,7 +99,7 @@ export const BurgerMenu = () => {
             onClick={CloseMenu}
             aria-label={ARIA.ARIA_NAV_SCROLL + NAVBAR.NAVBAR_3}
           >
-            {t("Nav Projects")}
+            {t("Nav Contact")}
           </StyledButton>
         </div>
         <div>

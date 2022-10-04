@@ -6,7 +6,6 @@ import { Counter } from "./Pages/LandingPages/Counter";
 import { CounterContext } from "./Pages/LandingPages/LandingPagesFiles.js/CounterContext";
 import { Portfolio } from "./Pages/LandingPages/Portfolio";
 import { useState } from "react";
-import { HiddenNav } from "./components/StyledComponents";
 import { FormPage } from "./components/FormPage";
 
 function App() {

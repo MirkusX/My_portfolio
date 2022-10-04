@@ -30,6 +30,7 @@ export const PortfolioNav = () => {
     <MediaQuery minWidth={811}>
       <StyledNav ontop>
         <NavDiv>
+          {/* Changes language when clicked */}
           <StyledTrans
             onClick={() => changeLanguage("no")}
             active={!active}
@@ -67,7 +68,7 @@ export const PortfolioNav = () => {
             tabIndex="0"
             aria-label={ARIA.ARIA_NAV_SCROLL + NAVBAR.NAVBAR_2}
           >
-            {t("Nav Contact")}
+            {t("Nav Projects")}
           </StyledButton>
           <StyledButton
             to="contact"
@@ -76,7 +77,7 @@ export const PortfolioNav = () => {
             tabIndex="0"
             aria-label={ARIA.ARIA_NAV_SCROLL + NAVBAR.NAVBAR_3}
           >
-            {t("Nav Projects")}
+            {t("Nav Contact")}
           </StyledButton>
           <StyledLink
             navbar
