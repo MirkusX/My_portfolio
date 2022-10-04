@@ -22,5 +22,3 @@ export const DivP = styled.p`
     content: "<";
   }
 `;
-
-export const HiddenNav = styled.nav``;

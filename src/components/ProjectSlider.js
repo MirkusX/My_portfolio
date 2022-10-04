@@ -1,21 +1,39 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {
+  LeftArrow,
   ProjectLink,
+  RightArrow,
   StyledImg,
   StyledPFooter,
   StyledSlider,
 } from "./StyledPortfolioComponents";
 import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
+import { useTranslation } from "react-i18next";
+//Custom arrows for carousel
+const Parrow = ({ className, onClick, style }) => (
+  <LeftArrow className={className} onClick={onClick} style={{ ...style }} />
+);
+
+const Narrow = ({ className, onClick, style }) => (
+  <RightArrow className={className} onClick={onClick} style={{ ...style }} />
+);
 
 export const ProjectSlider = () => {
-  const { SECTION_THREE } = PORTFOLIO_TEXT;
-  var settings = {
+  //Enables use of translation
+  const { t } = useTranslation();
+  //Deconstruction of text consts for easy access
+  const { SECTION_THREE, ARIA } = PORTFOLIO_TEXT;
+  //Settings for carousel
+  const settings = {
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    accessibility: false,
+    nextArrow: <Narrow />,
+    prevArrow: <Parrow />,
     responsive: [
       {
         breakpoint: 811,
@@ -25,55 +43,92 @@ export const ProjectSlider = () => {
       },
     ],
   };
+
   return (
+    //Carousel
     <StyledSlider {...settings}>
       <div>
-        <StyledImg src={SECTION_THREE.PROJECT_SLIDE_IMAGE_1} />
+        <StyledImg
+          src={SECTION_THREE.PROJECT_SLIDE_IMAGE_1}
+          aria-label={
+            ARIA.ARIA_IMAGE_LABEL + SECTION_THREE.PROJECT_SLIDE_TITLE_1
+          }
+        />
         <StyledPFooter>{SECTION_THREE.PROJECT_SLIDE_TITLE_1}</StyledPFooter>
         <ProjectLink href={SECTION_THREE.PROJECT_SLIDE_LINK_1}>
-          {SECTION_THREE.PROJECT_VISIT_BUTTON}
+          {t("Projects Visit")}
         </ProjectLink>
       </div>
       <div>
-        <StyledImg src={SECTION_THREE.PROJECT_SLIDE_IMAGE_2} />
+        <StyledImg
+          src={SECTION_THREE.PROJECT_SLIDE_IMAGE_2}
+          aria-label={
+            ARIA.ARIA_IMAGE_LABEL + SECTION_THREE.PROJECT_SLIDE_TITLE_2
+          }
+        />
         <StyledPFooter>{SECTION_THREE.PROJECT_SLIDE_TITLE_2}</StyledPFooter>
         <ProjectLink href={SECTION_THREE.PROJECT_SLIDE_LINK_2}>
-          {SECTION_THREE.PROJECT_VISIT_BUTTON}
+          {t("Projects Visit")}
         </ProjectLink>
       </div>
       <div>
-        <StyledImg src={SECTION_THREE.PROJECT_SLIDE_IMAGE_3} />
+        <StyledImg
+          src={SECTION_THREE.PROJECT_SLIDE_IMAGE_3}
+          aria-label={
+            ARIA.ARIA_IMAGE_LABEL + SECTION_THREE.PROJECT_SLIDE_TITLE_3
+          }
+        />
         <StyledPFooter>{SECTION_THREE.PROJECT_SLIDE_TITLE_3}</StyledPFooter>
         <ProjectLink href={SECTION_THREE.PROJECT_SLIDE_LINK_3}>
-          {SECTION_THREE.PROJECT_VISIT_BUTTON}
+          {t("Projects Visit")}
         </ProjectLink>
       </div>
       <div>
-        <StyledImg src={SECTION_THREE.PROJECT_SLIDE_IMAGE_4} />
+        <StyledImg
+          src={SECTION_THREE.PROJECT_SLIDE_IMAGE_4}
+          aria-label={
+            ARIA.ARIA_IMAGE_LABEL + SECTION_THREE.PROJECT_SLIDE_TITLE_4
+          }
+        />
         <StyledPFooter>{SECTION_THREE.PROJECT_SLIDE_TITLE_4}</StyledPFooter>
         <ProjectLink href={SECTION_THREE.PROJECT_SLIDE_LINK_4}>
-          {SECTION_THREE.PROJECT_VISIT_BUTTON}
+          {t("Projects Visit")}
         </ProjectLink>
       </div>
       <div>
-        <StyledImg src={SECTION_THREE.PROJECT_SLIDE_IMAGE_5} />
+        <StyledImg
+          src={SECTION_THREE.PROJECT_SLIDE_IMAGE_5}
+          aria-label={
+            ARIA.ARIA_IMAGE_LABEL + SECTION_THREE.PROJECT_SLIDE_TITLE_5
+          }
+        />
         <StyledPFooter>{SECTION_THREE.PROJECT_SLIDE_TITLE_5}</StyledPFooter>
         <ProjectLink href={SECTION_THREE.PROJECT_SLIDE_LINK_5}>
-          {SECTION_THREE.PROJECT_VISIT_BUTTON}
+          {t("Projects Visit")}
         </ProjectLink>
       </div>
       <div>
-        <StyledImg src={SECTION_THREE.PROJECT_SLIDE_IMAGE_6} />
+        <StyledImg
+          src={SECTION_THREE.PROJECT_SLIDE_IMAGE_6}
+          aria-label={
+            ARIA.ARIA_IMAGE_LABEL + SECTION_THREE.PROJECT_SLIDE_TITLE_6
+          }
+        />
         <StyledPFooter>{SECTION_THREE.PROJECT_SLIDE_TITLE_6}</StyledPFooter>
         <ProjectLink href={SECTION_THREE.PROJECT_SLIDE_LINK_6}>
-          {SECTION_THREE.PROJECT_VISIT_BUTTON}
+          {t("Projects Visit")}
         </ProjectLink>
       </div>
       <div>
-        <StyledImg src={SECTION_THREE.PROJECT_SLIDE_IMAGE_7} />
+        <StyledImg
+          src={SECTION_THREE.PROJECT_SLIDE_IMAGE_7}
+          aria-label={
+            ARIA.ARIA_IMAGE_LABEL + SECTION_THREE.PROJECT_SLIDE_TITLE_7
+          }
+        />
         <StyledPFooter>{SECTION_THREE.PROJECT_SLIDE_TITLE_7}</StyledPFooter>
         <ProjectLink href={SECTION_THREE.PROJECT_SLIDE_LINK_7}>
-          {SECTION_THREE.PROJECT_VISIT_BUTTON}
+          {t("Projects Visit")}
         </ProjectLink>
       </div>
     </StyledSlider>

@@ -5,18 +5,19 @@ import {
   StyledNav,
   StyledPFooter,
 } from "./StyledPortfolioComponents";
-import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
-  const { FOOTER } = PORTFOLIO_TEXT;
+  const { t } = useTranslation();
+
   return (
     <StyledNav id="contact">
-      <StyledPFooter>{FOOTER.FOOTER_PAGE_BY}</StyledPFooter>
-      <StyledLink>
+      <StyledPFooter>{t("Footer ContactMe")}</StyledPFooter>
+      <StyledLink tabIndex="0">
         <GithubIcon />
       </StyledLink>
       <p>|</p>
-      <StyledLink>
+      <StyledLink tabIndex="0">
         <DiscordIcon />
       </StyledLink>
     </StyledNav>

@@ -1,12 +1,83 @@
 import styled from "styled-components";
 import Slider from "react-slick";
 import { Link } from "react-scroll";
-import { AiFillGithub, AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { AiOutlineArrowDown } from "react-icons/ai";
-import { FaDiscord } from "react-icons/fa";
+import { FaReact, FaDiscord } from "react-icons/fa";
+import { MdLanguage } from "react-icons/md";
+import {
+  AiOutlineArrowLeft,
+  AiOutlineArrowRight,
+  AiOutlineArrowDown,
+  AiFillGithub,
+  AiFillHtml5,
+} from "react-icons/ai";
+
+//Styling
+
+export const LeftArrow = styled(AiOutlineArrowLeft)`
+  color: white;
+  scale: 1.5;
+  &:hover {
+    color: #00406c;
+  }
+`;
+
+export const RightArrow = styled(AiOutlineArrowRight)`
+  color: white;
+  scale: 1.5;
+  &:hover {
+    color: #00406c;
+  }
+`;
+
+export const StyledTrans = styled.button`
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  width: 50%;
+  background: #00111c;
+  border: none;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1em;
+  &:hover {
+    background-color: #00406c;
+    box-shadow: 0px 3px 0px 0px #ffffff;
+    border-radius: 3px 3px 0 0;
+  }
+  ${(props) => {
+    if (props.active) {
+      return `
+      background-color: #0000FF;
+      box-shadow: 0px 3px 0px 0px #ffffff;
+      border-radius: 3px 3px 0 0;
+      }
+       `;
+    }
+  }}
+`;
+
+export const LangIcon = styled(MdLanguage)`
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+`;
+
+export const NavDiv = styled.div`
+  gap: 10px;
+  display: flex;
+  align-items: center;
+`;
+
+export const BurgerLang = styled.div`
+  display: flex;
+`;
 
 export const InfoDiv = styled.div`
   width: 50%;
@@ -25,6 +96,7 @@ export const CollapsibleTextDiv = styled.div`
   background-color: #001523;
   max-height: ${(props) => (props.ease ? "500px" : "0")};
   opacity: ${(props) => (props.ease ? "1" : "0")};
+  background-color: ${(props) => (props.ease ? "#0000FF" : null)};
   transition: all 0.3s ease-in-out;
   overflow: hidden;
   text-align: start;
@@ -35,9 +107,11 @@ export const CollapsibleDiv = styled.div`
   border: white 1px solid;
   border-radius: 3px;
   padding: 0.5em;
+  background-color: ${(props) => (props.background ? "#0000FF" : null)};
+  transition: all 0.3s ease-in-out;
 `;
 
-export const CollapsibleButton = styled.div`
+export const CollapsibleButton = styled.a`
   padding: 0.5em;
   background-color: inherit;
   cursor: pointer;
@@ -66,8 +140,9 @@ export const StyledSlider = styled(Slider)`
   background: #001523;
   border-radius: 3px;
   border: white 1px solid;
+  padding: 1em;
   @media (max-width: 811px) {
-    width: 50%;
+    width: 70%;
     line-height: 0;
   }
 `;
@@ -96,8 +171,6 @@ export const StyledNav = styled.nav`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px 0px 0px 10px;
-  gap: 10px;
   width: 100%;
   background: #00111c;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -106,6 +179,7 @@ export const StyledNav = styled.nav`
       return `
       z-index: 99;
       position: fixed;
+      justify-content: space-between;
       `;
     }
   }}
@@ -124,6 +198,9 @@ export const StyledLink = styled.a`
     background-color: #00406c;
     box-shadow: 0px 3px 0px 0px #ffffff;
     border-radius: 3px 3px 0 0;
+  }
+  &:visited {
+    color: inherit;
   }
   ${(props) => {
     if (props.navbar) {
@@ -156,7 +233,6 @@ export const StyledDivOne = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1em 0;
-  gap: 10px;
 `;
 
 export const StyledH1 = styled.h1`
@@ -171,7 +247,7 @@ export const StyledTextContainer = styled.div`
   padding: 1em;
   justify-content: space-evenly;
   text-align: start;
-  width: 90%;
+  width: 80%;
   @media (max-width: 811px) {
     flex-direction: column;
     align-items: center;
@@ -179,27 +255,20 @@ export const StyledTextContainer = styled.div`
 `;
 
 export const StyledH2 = styled.h2`
-  font-size: 3rem;
+  font-size: 1.5rem;
+  color: white;
+  user-select: none;
+  margin: 0;
 `;
 
 export const StyledP = styled.p`
   font-size: 2rem;
   margin: 0;
   ${(props) => {
-    if (props.collapseTitle) {
-      return `
-      font-size: 1.5rem;
-      color: white;
-      user-select: none;
-      margin: 0;
-       `;
-    }
-  }}
-  ${(props) => {
     if (props.collapsible) {
       return `
       font-size: 1rem;
-      color: gray;
+      color: white;
        `;
     }
   }}
@@ -243,6 +312,7 @@ export const StyledButton = styled(Link)`
   background: #00111c;
   border: none;
   color: white;
+  user-select: none;
   cursor: pointer;
   &:hover {
     background-color: #00406c;
@@ -262,7 +332,7 @@ export const TestImg = styled.img`
   width: 15%;
   border-radius: 5px;
   @media (max-width: 810px) {
-    width: 40%;
+    width: 50%;
   }
 `;
 

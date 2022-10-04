@@ -14,17 +14,25 @@ import {
 } from "./StyledPortfolioComponents";
 import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
 import { Collapisble } from "./Collapsible";
+import { useTranslation } from "react-i18next";
 
 export const SectionOne = () => {
-  const { SECTION_ONE } = PORTFOLIO_TEXT;
+  //Enables use of translations
+  const { t } = useTranslation();
+  //Deconstruction of text consts for easy access
+  const { SECTION_ONE, ARIA } = PORTFOLIO_TEXT;
+
   return (
     <StyledSection id="home">
       <StyledDivOne>
         <StyledTextContainer>
-          <TestImg src={SECTION_ONE.PORTFOLIO_IMAGE}></TestImg>
+          <TestImg
+            src={SECTION_ONE.PORTFOLIO_IMAGE}
+            aria-label={ARIA.ARIA_IMAGE_LABEL + "Marcus"}
+          ></TestImg>
           <InfoDiv>
-            <StyledH1>{SECTION_ONE.GREETING}</StyledH1>
-            <StyledP collapsible>{SECTION_ONE.SMALL_INTRO}</StyledP>
+            <StyledH1>{t("Section One Hi")}</StyledH1>
+            <StyledP collapsible>{t("Section One And")}</StyledP>
             <Collapisble />
             <IconDiv>
               <HtmlIcon />

@@ -1,27 +1,38 @@
 import { useState } from "react";
-import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
 import {
   ArrowDown,
   CollapsibleButton,
   CollapsibleDiv,
   CollapsibleTextDiv,
+  StyledH2,
   StyledP,
 } from "./StyledPortfolioComponents";
+import { useTranslation } from "react-i18next";
 
 export const Collapisble = () => {
-  const { SECTION_TWO } = PORTFOLIO_TEXT;
+  //Enables use of translation
+  const { t } = useTranslation();
+  //Detects state of collapsible div
   const [expand, setExpand] = useState(false);
+
   const ExpandDiv = () => {
     setExpand(!expand);
   };
   return (
-    <CollapsibleDiv onClick={() => ExpandDiv()}>
+    <CollapsibleDiv
+      background={expand}
+      onClick={() => ExpandDiv()}
+      tabIndex="0"
+      //Enables use of Enter key to open collapse div
+      onKeyDown={(e) => e.key === "Enter" && ExpandDiv()}
+    >
       <CollapsibleButton>
-        <StyledP collapseTitle>{SECTION_TWO.ABOUT_COLLAPSIBLE_TITLE_1}</StyledP>
+        <StyledH2 collapseTitle>{t("Section One Read")}</StyledH2>
         <ArrowDown speen={expand ? 180 : undefined} />
+        {/* Spin transition for arrow in collapse div */}
       </CollapsibleButton>
       <CollapsibleTextDiv ease={expand}>
-        <StyledP collapsible>{SECTION_TWO.ABOUT_COLLAPSIBLE_1}</StyledP>
+        <StyledP collapsible>{t("Section One Description")}</StyledP>
       </CollapsibleTextDiv>
     </CollapsibleDiv>
   );

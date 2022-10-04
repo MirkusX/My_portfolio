@@ -1,12 +1,15 @@
 import { StyledH3, StyledProjectShowcase } from "./StyledPortfolioComponents";
 import { ProjectSlider } from "./ProjectSlider";
-import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
+import { useTranslation } from "react-i18next";
+
 export const SectionThree = () => {
-  const { SECTION_THREE } = PORTFOLIO_TEXT;
+  //Enables use of translations
+  const { t } = useTranslation();
+
   return (
     <div id="projects">
       <StyledProjectShowcase>
-        <StyledH3>{SECTION_THREE.PROJECT_TITLE}</StyledH3>
+        <StyledH3>{t("Projects MyProjects")}</StyledH3>
         <ProjectSlider />
       </StyledProjectShowcase>
     </div>

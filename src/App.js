@@ -11,6 +11,7 @@ import { FormPage } from "./components/FormPage";
 
 function App() {
   const [count, setCount] = useState(0);
+
   return (
     <div className="App">
       <CounterContext.Provider value={{ count, setCount }}>
@@ -18,16 +19,17 @@ function App() {
           <Route path="/CounterDisplay" element={<CounterDisplay />} />
           <Route path="/Counter" element={<Counter />} />
           <Route path="/catFacts" element={<CatFacts />} />
-          <Route path="/Portfolio" element={<Portfolio />} />
           <Route path="/FormPage" element={<FormPage />} />
+          <Route path="/Portfolio" element={<Portfolio />} />
         </Routes>
-        <HiddenNav>
+        <Portfolio />
+        {/* <div>
           <NavLink to="/CounterDisplay">Counter Display</NavLink>
           <NavLink to="/Counter">Counter</NavLink>
           <NavLink to="/catFacts">Cat Facts</NavLink>
           <NavLink to="/Portfolio">Portfolio</NavLink>
           <NavLink to="/FormPage">Form</NavLink>
-        </HiddenNav>
+        </div> */}
       </CounterContext.Provider>
     </div>
   );
