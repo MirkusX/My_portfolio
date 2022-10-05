@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { CounterContext } from "./LandingPagesFiles.js/CounterContext";
+import { CounterContext } from "./LandingPagesFiles/CounterContext";
 
 export const Counter = () => {
   const { count, setCount } = useContext(CounterContext);

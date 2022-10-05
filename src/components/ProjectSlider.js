@@ -8,7 +8,7 @@ import {
   StyledPFooter,
   StyledSlider,
 } from "./StyledPortfolioComponents";
-import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
+import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles/PortfolioText";
 import { useTranslation } from "react-i18next";
 //Custom arrows for carousel
 const Parrow = ({ className, onClick, style }) => (

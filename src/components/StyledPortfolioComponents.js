@@ -135,14 +135,13 @@ export const StyledBurgerLink = styled.a`
 `;
 
 export const StyledSlider = styled(Slider)`
-  width: 30%;
-  margin: 0 auto;
+  width: 50%;
   background: #001523;
   border-radius: 3px;
   border: white 1px solid;
   padding: 1em;
   @media (max-width: 811px) {
-    width: 70%;
+    width: 90%;
     line-height: 0;
   }
 `;
@@ -238,6 +237,9 @@ export const StyledDivOne = styled.div`
 export const StyledH1 = styled.h1`
   font-size: 5rem;
   margin: 0;
+  @media (max-width: 811px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const StyledTextContainer = styled.div`
@@ -281,13 +283,14 @@ export const StyledH3 = styled.h3`
 
 export const StyledProjectShowcase = styled.div`
   gap: 10px;
-  padding: 1em;
+  padding: 1em 0;
   background-color: #001a2c;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-
-  width: 90%;
+  align-items: center;
+  width: 100%;
   @media (max-width: 811px) {
-    width: 95%;
     margin-bottom: 1em;
   }
 `;

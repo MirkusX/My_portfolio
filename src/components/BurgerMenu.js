@@ -1,6 +1,6 @@
 import MediaQuery from "react-responsive";
 import { useState } from "react";
-import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
+import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles/PortfolioText";
 import {
   GithubIcon,
   LangIcon,

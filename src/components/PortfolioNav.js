@@ -8,7 +8,7 @@ import {
   StyledNav,
   StyledTrans,
 } from "./StyledPortfolioComponents";
-import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
+import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles/PortfolioText";
 import { useTranslation } from "react-i18next";
 import { langSelectContext } from "./langSelectContext";
 import { useContext } from "react";

@@ -12,7 +12,7 @@ import {
   StyledTextContainer,
   TestImg,
 } from "./StyledPortfolioComponents";
-import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles.js/PortfolioText";
+import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles/PortfolioText";
 import { Collapisble } from "./Collapsible";
 import { useTranslation } from "react-i18next";
 

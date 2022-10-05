@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { useContext } from "react";
-import { CounterContext } from "./LandingPagesFiles.js/CounterContext";
+import { CounterContext } from "./LandingPagesFiles/CounterContext";
 import axios from "axios";
 
 export const CatFacts = () => {
