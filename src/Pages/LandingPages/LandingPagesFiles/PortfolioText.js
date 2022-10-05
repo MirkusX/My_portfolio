@@ -74,4 +74,8 @@ export const PORTFOLIO_TEXT = {
     ARIA_NAV_SCROLL: "Scroll to ",
     ARIA_IMAGE_LABEL: "Image of ",
   },
+
+  CONTACT: {
+    EMAIL: "mailto: marcusk.kodehode@gmail.com",
+  },
 };

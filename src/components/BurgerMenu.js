@@ -2,9 +2,11 @@ import MediaQuery from "react-responsive";
 import { useState } from "react";
 import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles/PortfolioText";
 import {
+  CloseBurger,
   GithubIcon,
   LangIcon,
   NavDiv,
+  OpenBurger,
   StyledBurgerLink,
   StyledButton,
   StyledTrans,
@@ -45,6 +47,8 @@ export const BurgerMenu = () => {
         isOpen={isOpen}
         onOpen={openMenu}
         onClose={CloseMenu}
+        customCrossIcon={<CloseBurger />}
+        customBurgerIcon={<OpenBurger />}
       >
         <NavDiv>
           <StyledTrans
@@ -129,11 +133,12 @@ const styles = {
     background: "#a90000",
   },
   bmCrossButton: {
-    height: "16px",
-    width: "16px",
+    height: "32px",
+    width: "32px",
   },
   bmCross: {
-    background: "#bdc3c7",
+    background: "gray",
+    borderRadius: "3px",
   },
   bmMenuWrap: {
     position: "fixed",

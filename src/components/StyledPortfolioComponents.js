@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Slider from "react-slick";
 import { Link } from "react-scroll";
 import { DiCss3 } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
-import { FaReact, FaDiscord } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { MdLanguage } from "react-icons/md";
 import {
   AiOutlineArrowLeft,
@@ -11,9 +11,24 @@ import {
   AiOutlineArrowDown,
   AiFillGithub,
   AiFillHtml5,
+  AiOutlineClose,
+  AiOutlineMail,
 } from "react-icons/ai";
+import { BiMenuAltLeft } from "react-icons/bi";
 
 //Styling
+
+export const EmailIcon = styled(AiOutlineMail)`
+  width: 24px;
+  height: 24px;
+`;
+
+export const OpenBurger = styled(BiMenuAltLeft)`
+  background: gray;
+  border-radius: 3px;
+`;
+
+export const CloseBurger = styled(AiOutlineClose)``;
 
 export const LeftArrow = styled(AiOutlineArrowLeft)`
   color: white;
@@ -86,14 +101,23 @@ export const InfoDiv = styled.div`
   }
 `;
 
+const Bop = keyframes`
+0% {
+  top: 0;
+}
+100% {
+  bottom: 100px;
+}
+`;
+
 export const ArrowDown = styled(AiOutlineArrowDown)`
   transform: ${(props) => (props.speen ? "rotate(180deg)" : "rotate(0deg)")};
   font-size: 24px;
+  animation: ${Bop} 1s infinite;
 `;
 
 export const CollapsibleTextDiv = styled.div`
   border-top: 1px solid white;
-  background-color: #001523;
   max-height: ${(props) => (props.ease ? "500px" : "0")};
   opacity: ${(props) => (props.ease ? "1" : "0")};
   background-color: ${(props) => (props.ease ? "#0000FF" : null)};
@@ -192,6 +216,8 @@ export const StyledLink = styled.a`
   padding: 20px;
   gap: 10px;
   background: #00111c;
+  text-decoration: none;
+  color: white;
   cursor: pointer;
   &:hover {
     background-color: #00406c;
@@ -199,7 +225,7 @@ export const StyledLink = styled.a`
     border-radius: 3px 3px 0 0;
   }
   &:visited {
-    color: inherit;
+    color: white;
   }
   ${(props) => {
     if (props.navbar) {
@@ -390,11 +416,6 @@ export const GithubIcon = styled(AiFillGithub)`
        `;
     }
   }}
-`;
-
-export const DiscordIcon = styled(FaDiscord)`
-  width: 24px;
-  height: 24px;
 `;
 
 export const HamburgerWrapper = styled.div`

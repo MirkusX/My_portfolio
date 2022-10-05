@@ -20,6 +20,7 @@ const resources = {
       "Projects MyProjects": "My Projects",
       "Projects Visit": "Visit",
 
+      "Contact Help": "Wanna contact me? Check below!",
       "Footer ContactMe": "Contact me",
     },
   },
@@ -40,6 +41,7 @@ const resources = {
       "Projects MyProjects": "Mine Prosjekter",
       "Projects Visit": "Besøk",
 
+      "Contact Help": "Vil du kontakte meg? Sjekk nedenfor!",
       "Footer ContactMe": "Kontakt meg",
     },
   },
