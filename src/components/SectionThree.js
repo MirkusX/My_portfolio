@@ -1,4 +1,8 @@
-import { StyledH3, StyledProjectShowcase } from "./StyledPortfolioComponents";
+import {
+  StyledH3,
+  StyledPFooter,
+  StyledProjectShowcase,
+} from "./StyledPortfolioComponents";
 import { ProjectSlider } from "./ProjectSlider";
 import { useTranslation } from "react-i18next";
 

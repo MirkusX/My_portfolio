@@ -58,7 +58,7 @@ export const BurgerMenu = () => {
             onClick={() => changeLanguage("no")}
           >
             <LangIcon />
-            NO
+            {NAVBAR.BURGER_NO}
           </StyledTrans>
           <StyledTrans
             burger
@@ -67,7 +67,7 @@ export const BurgerMenu = () => {
             onClick={() => changeLanguage("en")}
           >
             <LangIcon />
-            ENG
+            {NAVBAR.BURGER_EN}
           </StyledTrans>
         </NavDiv>
         <div>

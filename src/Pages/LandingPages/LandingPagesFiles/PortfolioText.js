@@ -9,29 +9,18 @@ import portfolioimage from "./images/portfolioimage.jpg";
 
 export const PORTFOLIO_TEXT = {
   NAVBAR: {
-    NAVBAR_1: "Om Meg",
-    NAVBAR_2: "Prosjekter",
-    NAVBAR_3: "Kontakt",
     NAVBAR_LINK: "https://github.com/MirkusX",
+    NAVBAR_EN: "English",
+    NAVBAR_NO: "Norsk",
+    BURGER_EN: "ENG",
+    BURGER_NO: "NO",
   },
 
   SECTION_ONE: {
-    GREETING: "Hei, jeg heter Marcus...",
-    SMALL_INTRO: "Og er en front-end utvikler fra Bergen",
     PORTFOLIO_IMAGE: portfolioimage,
   },
 
-  SECTION_TWO: {
-    ABOUT_TITLE: "Om Meg",
-    ABOUT_COLLAPSIBLE_TITLE_1: "Les Mer",
-
-    ABOUT_COLLAPSIBLE_1:
-      "Jeg er 24 år og har drevet med datamaskiner i lang tid, liker gaming og video redigering. Jobber mest med React nå, begynte med HTML, CSS og JS.",
-  },
-
   SECTION_THREE: {
-    PROJECT_TITLE: "Mine Prosjekter",
-
     PROJECT_SLIDE_TITLE_1: "Random Generator",
     PROJECT_SLIDE_TITLE_2: "Rating System",
     PROJECT_SLIDE_TITLE_3: "Todolist",
@@ -57,16 +46,6 @@ export const PORTFOLIO_TEXT = {
     PROJECT_SLIDE_IMAGE_5: paulallen,
     PROJECT_SLIDE_IMAGE_6: unitconverternu,
     PROJECT_SLIDE_IMAGE_7: calculator,
-
-    PROJECT_VISIT_BUTTON: "Besøk",
-
-    PROJECT_DESCRIPTION_REACT: "Laget i React",
-    PROJECT_DESCRIPTION_HTMLCSS: "Laget i HTML/CSS",
-    PROJECT_DESCRIPTION_HTMLCSSJS: "Laget i HTML/CSS/JS",
-  },
-
-  FOOTER: {
-    FOOTER_PAGE_BY: "Kontakt meg",
   },
 
   ARIA: {

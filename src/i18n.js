@@ -20,8 +20,7 @@ const resources = {
       "Projects MyProjects": "My Projects",
       "Projects Visit": "Visit",
 
-      "Contact Help": "Wanna contact me? Check below!",
-      "Footer ContactMe": "Contact me",
+      "Footer ContactMe": "Contact me >._.>",
     },
   },
 
@@ -32,7 +31,7 @@ const resources = {
       "Nav Projects": "Prosjekter",
 
       "Section One Hi": "Hei, jeg heter Marcus...",
-      "Section One And": "Og er en front-end utvikler fra Bergen",
+      "Section One And": "Og jeg er en Front-End utvikler fra Bergen",
 
       "Section One Read": "Les Mer",
       "Section One Description":
@@ -41,8 +40,7 @@ const resources = {
       "Projects MyProjects": "Mine Prosjekter",
       "Projects Visit": "Besøk",
 
-      "Contact Help": "Vil du kontakte meg? Sjekk nedenfor!",
-      "Footer ContactMe": "Kontakt meg",
+      "Footer ContactMe": "Kontakt meg >._.>",
     },
   },
 };

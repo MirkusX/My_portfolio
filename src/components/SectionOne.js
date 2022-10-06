@@ -10,7 +10,7 @@ import {
   StyledP,
   StyledSection,
   StyledTextContainer,
-  TestImg,
+  PortfolioImg,
 } from "./StyledPortfolioComponents";
 import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles/PortfolioText";
 import { Collapisble } from "./Collapsible";
@@ -26,10 +26,10 @@ export const SectionOne = () => {
     <StyledSection id="home">
       <StyledDivOne>
         <StyledTextContainer>
-          <TestImg
+          <PortfolioImg
             src={SECTION_ONE.PORTFOLIO_IMAGE}
             aria-label={ARIA.ARIA_IMAGE_LABEL + "Marcus"}
-          ></TestImg>
+          ></PortfolioImg>
           <InfoDiv>
             <StyledH1>{t("Section One Hi")}</StyledH1>
             <StyledP collapsible>{t("Section One And")}</StyledP>

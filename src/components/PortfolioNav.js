@@ -37,7 +37,7 @@ export const PortfolioNav = () => {
             disabled={!active}
           >
             <LangIcon />
-            Norwegian
+            {NAVBAR.NAVBAR_NO}
           </StyledTrans>
           <p>|</p>
           <StyledTrans
@@ -46,7 +46,7 @@ export const PortfolioNav = () => {
             disabled={active}
           >
             <LangIcon />
-            English
+            {NAVBAR.NAVBAR_EN}
           </StyledTrans>
         </NavDiv>
         <NavDiv>

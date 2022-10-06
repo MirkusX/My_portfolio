@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Slider from "react-slick";
 import { Link } from "react-scroll";
 import { DiCss3 } from "react-icons/di";
@@ -48,11 +48,10 @@ export const RightArrow = styled(AiOutlineArrowRight)`
 
 export const StyledTrans = styled.button`
   display: inline-flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  gap: 10px;
+  padding: 1.5em;
+  gap: 1em;
   width: 50%;
   background: #00111c;
   border: none;
@@ -85,13 +84,9 @@ export const LangIcon = styled(MdLanguage)`
 `;
 
 export const NavDiv = styled.div`
-  gap: 10px;
+  gap: 1em;
   display: flex;
   align-items: center;
-`;
-
-export const BurgerLang = styled.div`
-  display: flex;
 `;
 
 export const InfoDiv = styled.div`
@@ -101,19 +96,9 @@ export const InfoDiv = styled.div`
   }
 `;
 
-const Bop = keyframes`
-0% {
-  top: 0;
-}
-100% {
-  bottom: 100px;
-}
-`;
-
 export const ArrowDown = styled(AiOutlineArrowDown)`
   transform: ${(props) => (props.speen ? "rotate(180deg)" : "rotate(0deg)")};
-  font-size: 24px;
-  animation: ${Bop} 1s infinite;
+  font-size: 1.5rem;
 `;
 
 export const CollapsibleTextDiv = styled.div`
@@ -146,11 +131,10 @@ export const CollapsibleButton = styled.a`
 
 export const StyledBurgerLink = styled.a`
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  gap: 10px;
+  padding: 1.5em;
+  gap: 1em;
   background: #00111c;
   cursor: pointer;
   &:hover {
@@ -191,10 +175,10 @@ export const ProjectP = styled.p`
 
 export const StyledNav = styled.nav`
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 1em;
   background: #00111c;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   ${(props) => {
@@ -210,11 +194,10 @@ export const StyledNav = styled.nav`
 
 export const StyledLink = styled.a`
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  gap: 10px;
+  padding: 1.5em;
+  gap: 1em;
   background: #00111c;
   text-decoration: none;
   color: white;
@@ -248,8 +231,8 @@ export const StyledSection = styled.section`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 10px;
-  margin-bottom: 1em;
+  gap: 1em;
+  margin: 7em 0;
 `;
 
 export const StyledDivOne = styled.div`
@@ -270,7 +253,6 @@ export const StyledH1 = styled.h1`
 
 export const StyledTextContainer = styled.div`
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   padding: 1em;
   justify-content: space-evenly;
@@ -308,7 +290,7 @@ export const StyledH3 = styled.h3`
 `;
 
 export const StyledProjectShowcase = styled.div`
-  gap: 10px;
+  gap: 1em;
   padding: 1em 0;
   background-color: #001a2c;
   display: flex;
@@ -336,8 +318,8 @@ export const StyledButton = styled(Link)`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  gap: 10px;
+  padding: 1.5em;
+  gap: 1em;
   background: #00111c;
   border: none;
   color: white;
@@ -350,16 +332,9 @@ export const StyledButton = styled(Link)`
   }
 `;
 
-export const Space = styled.div`
-  padding: 5em;
-  @media (max-width: 811px) {
-    padding: 0;
-  }
-`;
-
-export const TestImg = styled.img`
+export const PortfolioImg = styled.img`
   width: 15%;
-  border-radius: 5px;
+  border-radius: 3px;
   @media (max-width: 810px) {
     width: 50%;
   }
@@ -376,7 +351,6 @@ export const IconTextDiv = styled.div`
 
 export const IconDiv = styled.div`
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 `;
 

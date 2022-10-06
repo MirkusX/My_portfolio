@@ -1,4 +1,4 @@
-import { NavLink, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { CounterDisplay } from "./Pages/LandingPages/CounterDisplay";
 import { CatFacts } from "./Pages/LandingPages/CatFacts";
@@ -7,12 +7,17 @@ import { CounterContext } from "./Pages/LandingPages/LandingPagesFiles/CounterCo
 import { Portfolio } from "./Pages/LandingPages/Portfolio";
 import { useState } from "react";
 import { FormPage } from "./components/FormPage";
+import { Helmet } from "react-helmet";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Marcus K</title>
+      </Helmet>
       <CounterContext.Provider value={{ count, setCount }}>
         <Routes>
           <Route path="/CounterDisplay" element={<CounterDisplay />} />

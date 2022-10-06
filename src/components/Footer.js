@@ -1,4 +1,10 @@
-import { EmailIcon, StyledLink, StyledNav } from "./StyledPortfolioComponents";
+import {
+  EmailIcon,
+  StyledLink,
+  StyledNav,
+  StyledP,
+  StyledPFooter,
+} from "./StyledPortfolioComponents";
 import { useTranslation } from "react-i18next";
 import { PORTFOLIO_TEXT } from "../Pages/LandingPages/LandingPagesFiles/PortfolioText";
 
@@ -9,8 +15,10 @@ export const Footer = () => {
 
   return (
     <StyledNav id="contact">
+      <StyledPFooter>{t("Footer ContactMe")}</StyledPFooter>
+      <p>|</p>
       <StyledLink tabIndex="0" href={CONTACT.EMAIL}>
-        {t("Footer ContactMe")} <EmailIcon />
+        <EmailIcon />
       </StyledLink>
     </StyledNav>
   );

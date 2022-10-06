@@ -15,11 +15,8 @@ export const Portfolio = () => {
       <StyledBody>
         <PortfolioNav />
         <BurgerMenu />
-        <Space />
         <SectionOne />
-        <Space />
         <SectionThree />
-        <Space />
         <Footer />
       </StyledBody>
     </langSelectContext.Provider>
