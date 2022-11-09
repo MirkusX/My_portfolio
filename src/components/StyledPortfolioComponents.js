@@ -337,6 +337,7 @@ export const PortfolioImg = styled.img`
   border-radius: 3px;
   @media (max-width: 810px) {
     width: 50%;
+    height: auto;
   }
 `;
 
