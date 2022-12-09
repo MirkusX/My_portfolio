@@ -131,6 +131,90 @@ export const ProjectSlider = () => {
           {t("Projects Visit")}
         </ProjectLink>
       </div>
+      <div>
+        <StyledImg
+          src={SECTION_THREE.PROJECT_SLIDE_IMAGE_8}
+          aria-label={
+            ARIA.ARIA_IMAGE_LABEL + SECTION_THREE.PROJECT_SLIDE_TITLE_8
+          }
+        />
+        <StyledPFooter>{SECTION_THREE.PROJECT_SLIDE_TITLE_8}</StyledPFooter>
+        <ProjectLink href={SECTION_THREE.PROJECT_SLIDE_LINK_8}>
+          {t("Projects Visit")}
+        </ProjectLink>
+      </div>
+      <div>
+        <StyledImg
+          src={SECTION_THREE.PROJECT_SLIDE_IMAGE_9}
+          aria-label={
+            ARIA.ARIA_IMAGE_LABEL + SECTION_THREE.PROJECT_SLIDE_TITLE_9
+          }
+        />
+        <StyledPFooter>{SECTION_THREE.PROJECT_SLIDE_TITLE_9}</StyledPFooter>
+        <ProjectLink href={SECTION_THREE.PROJECT_SLIDE_LINK_9}>
+          {t("Projects Visit")}
+        </ProjectLink>
+      </div>
+      <div>
+        <StyledImg
+          src={SECTION_THREE.PROJECT_SLIDE_IMAGE_10}
+          aria-label={
+            ARIA.ARIA_IMAGE_LABEL + SECTION_THREE.PROJECT_SLIDE_TITLE_10
+          }
+        />
+        <StyledPFooter>{SECTION_THREE.PROJECT_SLIDE_TITLE_10}</StyledPFooter>
+        <ProjectLink href={SECTION_THREE.PROJECT_SLIDE_LINK_10}>
+          {t("Projects Visit")}
+        </ProjectLink>
+      </div>
+      <div>
+        <StyledImg
+          src={SECTION_THREE.PROJECT_SLIDE_IMAGE_11}
+          aria-label={
+            ARIA.ARIA_IMAGE_LABEL + SECTION_THREE.PROJECT_SLIDE_TITLE_11
+          }
+        />
+        <StyledPFooter>{SECTION_THREE.PROJECT_SLIDE_TITLE_11}</StyledPFooter>
+        <ProjectLink href={SECTION_THREE.PROJECT_SLIDE_LINK_11}>
+          {t("Projects Visit")}
+        </ProjectLink>
+      </div>
+      <div>
+        <StyledImg
+          src={SECTION_THREE.PROJECT_SLIDE_IMAGE_12}
+          aria-label={
+            ARIA.ARIA_IMAGE_LABEL + SECTION_THREE.PROJECT_SLIDE_TITLE_12
+          }
+        />
+        <StyledPFooter>{SECTION_THREE.PROJECT_SLIDE_TITLE_12}</StyledPFooter>
+        <ProjectLink href={SECTION_THREE.PROJECT_SLIDE_LINK_12}>
+          {t("Projects Visit")}
+        </ProjectLink>
+      </div>
+      <div>
+        <StyledImg
+          src={SECTION_THREE.PROJECT_SLIDE_IMAGE_13}
+          aria-label={
+            ARIA.ARIA_IMAGE_LABEL + SECTION_THREE.PROJECT_SLIDE_TITLE_13
+          }
+        />
+        <StyledPFooter>{SECTION_THREE.PROJECT_SLIDE_TITLE_13}</StyledPFooter>
+        <ProjectLink href={SECTION_THREE.PROJECT_SLIDE_LINK_13}>
+          {t("Projects Visit")}
+        </ProjectLink>
+      </div>
+      <div>
+        <StyledImg
+          src={SECTION_THREE.PROJECT_SLIDE_IMAGE_14}
+          aria-label={
+            ARIA.ARIA_IMAGE_LABEL + SECTION_THREE.PROJECT_SLIDE_TITLE_14
+          }
+        />
+        <StyledPFooter>{SECTION_THREE.PROJECT_SLIDE_TITLE_14}</StyledPFooter>
+        <ProjectLink href={SECTION_THREE.PROJECT_SLIDE_LINK_14}>
+          {t("Projects Visit")}
+        </ProjectLink>
+      </div>
     </StyledSlider>
   );
 };
