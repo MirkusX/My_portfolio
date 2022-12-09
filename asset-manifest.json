@@ -1,27 +1,34 @@
 {
   "files": {
     "main.css": "/My_portfolio/static/css/main.86fb53ff.css",
-    "main.js": "/My_portfolio/static/js/main.6aaabaed.js",
+    "main.js": "/My_portfolio/static/js/main.03a3b94a.js",
     "static/js/787.128fc6e9.chunk.js": "/My_portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/portfolioimage.jpg": "/My_portfolio/static/media/portfolioimage.fe54c98ee840a6307c20.jpg",
-    "static/media/projectshowcase1.png": "/My_portfolio/static/media/projectshowcase1.0d20e0effbdbcac19d60.png",
-    "static/media/unitconverternu.png": "/My_portfolio/static/media/unitconverternu.655222357e4b0a4c4f83.png",
-    "static/media/todolist.png": "/My_portfolio/static/media/todolist.e05e3006b2749282943b.png",
-    "static/media/calculator.png": "/My_portfolio/static/media/calculator.aa154e08cbef0def8e76.png",
-    "static/media/paulallen.png": "/My_portfolio/static/media/paulallen.bcdb11bd90bf8275c2df.png",
-    "static/media/ratingsystem.png": "/My_portfolio/static/media/ratingsystem.20c70046746fff62cef3.png",
-    "static/media/drummachine.png": "/My_portfolio/static/media/drummachine.d978842e142d59d4773b.png",
+    "static/media/quizzical.webp": "/My_portfolio/static/media/quizzical.dd306911d16653060160.webp",
+    "static/media/listenlist.webp": "/My_portfolio/static/media/listenlist.a0884979fb6192826db6.webp",
+    "static/media/storepage.webp": "/My_portfolio/static/media/storepage.f643cc1d9a1d2ef46bf7.webp",
+    "static/media/traveljournal.webp": "/My_portfolio/static/media/traveljournal.f58c606bcb4752863a85.webp",
+    "static/media/mylearningjournal.webp": "/My_portfolio/static/media/mylearningjournal.9ac2667ee5c32462dae7.webp",
+    "static/media/tindogdisgustingshit.webp": "/My_portfolio/static/media/tindogdisgustingshit.0f9afe5f40b0b54ef80e.webp",
+    "static/media/unitconverternu.webp": "/My_portfolio/static/media/unitconverternu.907a6b9c90974b52dc5f.webp",
+    "static/media/projectshowcase1.webp": "/My_portfolio/static/media/projectshowcase1.12c49fe458ca64ff1948.webp",
+    "static/media/drummachine.webp": "/My_portfolio/static/media/drummachine.93d4dc9c61a430dcfa8e.webp",
+    "static/media/todolist.webp": "/My_portfolio/static/media/todolist.86bb66e758597c229bd4.webp",
+    "static/media/paulallen.webp": "/My_portfolio/static/media/paulallen.2ea1f463163653f0ecb0.webp",
+    "static/media/calculator.webp": "/My_portfolio/static/media/calculator.e84de49f93a3393e22a3.webp",
+    "static/media/ratingsystem.webp": "/My_portfolio/static/media/ratingsystem.61cb0b92fbb2b382f5a9.webp",
+    "static/media/colorpicker.webp": "/My_portfolio/static/media/colorpicker.b830b6fd0af2c343844a.webp",
     "static/media/slick.svg": "/My_portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/My_portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/My_portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/My_portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/My_portfolio/index.html",
     "main.86fb53ff.css.map": "/My_portfolio/static/css/main.86fb53ff.css.map",
-    "main.6aaabaed.js.map": "/My_portfolio/static/js/main.6aaabaed.js.map",
+    "main.03a3b94a.js.map": "/My_portfolio/static/js/main.03a3b94a.js.map",
     "787.128fc6e9.chunk.js.map": "/My_portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86fb53ff.css",
-    "static/js/main.6aaabaed.js"
+    "static/js/main.03a3b94a.js"
   ]
 }
