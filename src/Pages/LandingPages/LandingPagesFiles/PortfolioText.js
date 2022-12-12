@@ -14,6 +14,8 @@ import storepage from "./images/storepage.webp";
 import tindogdisgustingshit from "./images/tindogdisgustingshit.webp";
 import traveljournal from "./images/traveljournal.webp";
 
+//Text consts for general use
+
 export const PORTFOLIO_TEXT = {
   NAVBAR: {
     NAVBAR_LINK: "https://github.com/MirkusX",
@@ -37,7 +39,7 @@ export const PORTFOLIO_TEXT = {
     EMAIL: "mailto: marcusk.kodehode@gmail.com",
   },
 };
-
+//Array containing slider content
 export const ProjectArray = [
   {
     PROJECT_SLIDE_TITLE: "Random Generator",

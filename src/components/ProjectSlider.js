@@ -50,6 +50,7 @@ export const ProjectSlider = () => {
   return (
     //Carousel
     <StyledSlider {...settings}>
+      {/* Displays content from array */}
       {ProjectArray.map((item, index) => {
         return (
           <div key={index}>
