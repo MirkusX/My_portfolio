@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/My_portfolio/static/css/main.86fb53ff.css",
-    "main.js": "/My_portfolio/static/js/main.52cf18df.js",
+    "main.js": "/My_portfolio/static/js/main.e37f2b26.js",
     "static/js/787.128fc6e9.chunk.js": "/My_portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/portfolioimage.jpg": "/My_portfolio/static/media/portfolioimage.fe54c98ee840a6307c20.jpg",
-    "static/media/quizzical.webp": "/My_portfolio/static/media/quizzical.dd306911d16653060160.webp",
     "static/media/listenlist.webp": "/My_portfolio/static/media/listenlist.a0884979fb6192826db6.webp",
+    "static/media/newwithoutshit.webp": "/My_portfolio/static/media/newwithoutshit.4378866060a661738a9c.webp",
     "static/media/storepage.webp": "/My_portfolio/static/media/storepage.f643cc1d9a1d2ef46bf7.webp",
     "static/media/traveljournal.webp": "/My_portfolio/static/media/traveljournal.f58c606bcb4752863a85.webp",
     "static/media/mylearningjournal.webp": "/My_portfolio/static/media/mylearningjournal.9ac2667ee5c32462dae7.webp",
@@ -24,11 +24,11 @@
     "static/media/slick.woff": "/My_portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/My_portfolio/index.html",
     "main.86fb53ff.css.map": "/My_portfolio/static/css/main.86fb53ff.css.map",
-    "main.52cf18df.js.map": "/My_portfolio/static/js/main.52cf18df.js.map",
+    "main.e37f2b26.js.map": "/My_portfolio/static/js/main.e37f2b26.js.map",
     "787.128fc6e9.chunk.js.map": "/My_portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86fb53ff.css",
-    "static/js/main.52cf18df.js"
+    "static/js/main.e37f2b26.js"
   ]
 }
