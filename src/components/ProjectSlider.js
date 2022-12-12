@@ -58,7 +58,7 @@ export const ProjectSlider = () => {
               aria-label={ARIA.ARIA_IMAGE_LABEL + item.PROJECT_SLIDE_TITLE}
             />
             <StyledPFooter>{item.PROJECT_SLIDE_TITLE}</StyledPFooter>
-            <ProjectLink href={item.PROJECT_SLIDE_LINK}>
+            <ProjectLink href={item.PROJECT_SLIDE_LINK} target="_blank">
               {t("Projects Visit")}
             </ProjectLink>
           </div>
