@@ -9,7 +9,7 @@ import portfolioimage from "./images/portfolioimage.jpg";
 import colorpicker from "./images/colorpicker.webp";
 import listenlist from "./images/listenlist.webp";
 import mylearningjournal from "./images/mylearningjournal.webp";
-import quizzical from "./images/quizzical.webp";
+import newwithoutshit from "./images/newwithoutshit.webp";
 import storepage from "./images/storepage.webp";
 import tindogdisgustingshit from "./images/tindogdisgustingshit.webp";
 import traveljournal from "./images/traveljournal.webp";
@@ -105,7 +105,7 @@ export const ProjectArray = [
   {
     PROJECT_SLIDE_TITLE: "Quizzical",
     PROJECT_SLIDE_LINK: "https://mirkusx.github.io/quizzical/",
-    PROJECT_SLIDE_IMAGE: quizzical,
+    PROJECT_SLIDE_IMAGE: newwithoutshit,
   },
 
   {
