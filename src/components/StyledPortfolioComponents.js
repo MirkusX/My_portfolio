@@ -137,6 +137,7 @@ export const StyledBurgerLink = styled.a`
   gap: 1em;
   background: #00111c;
   cursor: pointer;
+  color: white;
   &:hover {
     background-color: #00406c;
   }

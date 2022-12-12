@@ -109,6 +109,8 @@ export const BurgerMenu = () => {
         <div>
           <StyledBurgerLink
             aria-label={ARIA.ARIA_NAVIGATE + NAVBAR.NAVBAR_LINK}
+            href={NAVBAR.NAVBAR_LINK}
+            target="_blank"
           >
             <GithubIcon />
           </StyledBurgerLink>
