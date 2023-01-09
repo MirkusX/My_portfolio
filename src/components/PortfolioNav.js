@@ -85,6 +85,7 @@ export const PortfolioNav = () => {
             href={NAVBAR.NAVBAR_LINK}
             aria-label={ARIA.ARIA_NAVIGATE + NAVBAR.NAVBAR_LINK}
             target="_blank"
+            rel="noreferrer"
           >
             <GithubIcon />
           </StyledLink>
