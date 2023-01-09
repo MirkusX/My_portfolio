@@ -14,6 +14,7 @@ import storepage from "./images/storepage.webp";
 import tindogdisgustingshit from "./images/tindogdisgustingshit.webp";
 import traveljournal from "./images/traveljournal.webp";
 import christmascountdown from "./images/christmascountdown.webp";
+import biznizcard from "./images/biznizcard.webp";
 
 //Text consts for general use
 
@@ -133,5 +134,11 @@ export const ProjectArray = [
     PROJECT_SLIDE_TITLE: "Countdown to Christmas",
     PROJECT_SLIDE_LINK: "https://mirkusx.github.io/countdowntochristmas/",
     PROJECT_SLIDE_IMAGE: christmascountdown,
+  },
+
+  {
+    PROJECT_SLIDE_TITLE: "Business Card",
+    PROJECT_SLIDE_LINK: "https://mirkusx.github.io/biznizcard/",
+    PROJECT_SLIDE_IMAGE: biznizcard,
   },
 ];
