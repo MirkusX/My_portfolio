@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My_portfolio/static/css/main.86fb53ff.css",
-    "main.js": "/My_portfolio/static/js/main.afd2da15.js",
+    "main.js": "/My_portfolio/static/js/main.5c0bf199.js",
     "static/js/787.128fc6e9.chunk.js": "/My_portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/portfolioimage.jpg": "/My_portfolio/static/media/portfolioimage.fe54c98ee840a6307c20.jpg",
     "static/media/christmascountdown.webp": "/My_portfolio/static/media/christmascountdown.c0dcb1d7bd7a4c259783.webp",
@@ -11,7 +11,7 @@
     "static/media/mylearningjournal.webp": "/My_portfolio/static/media/mylearningjournal.9ac2667ee5c32462dae7.webp",
     "static/media/listenlist.webp": "/My_portfolio/static/media/listenlist.4bd2b929e8d3584ec12b.webp",
     "static/media/tindogdisgustingshit.webp": "/My_portfolio/static/media/tindogdisgustingshit.0f9afe5f40b0b54ef80e.webp",
-    "static/media/biznizcard.webp": "/My_portfolio/static/media/biznizcard.173ac1b0475fd61acc8d.webp",
+    "static/media/biznizcard.webp": "/My_portfolio/static/media/biznizcard.a8982532747832bc190f.webp",
     "static/media/unitconverternu.webp": "/My_portfolio/static/media/unitconverternu.907a6b9c90974b52dc5f.webp",
     "static/media/projectshowcase1.webp": "/My_portfolio/static/media/projectshowcase1.12c49fe458ca64ff1948.webp",
     "static/media/drummachine.webp": "/My_portfolio/static/media/drummachine.93d4dc9c61a430dcfa8e.webp",
@@ -26,11 +26,11 @@
     "static/media/slick.woff": "/My_portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/My_portfolio/index.html",
     "main.86fb53ff.css.map": "/My_portfolio/static/css/main.86fb53ff.css.map",
-    "main.afd2da15.js.map": "/My_portfolio/static/js/main.afd2da15.js.map",
+    "main.5c0bf199.js.map": "/My_portfolio/static/js/main.5c0bf199.js.map",
     "787.128fc6e9.chunk.js.map": "/My_portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86fb53ff.css",
-    "static/js/main.afd2da15.js"
+    "static/js/main.5c0bf199.js"
   ]
 }
