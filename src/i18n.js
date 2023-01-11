@@ -3,6 +3,10 @@ import { initReactI18next } from "react-i18next";
 
 //Translations for Portfolio page
 
+const currentYear = new Date().getFullYear();
+const pastYear = 1998;
+const between = currentYear - pastYear;
+
 const resources = {
   en: {
     translation: {
@@ -34,8 +38,7 @@ const resources = {
       "Section One And": "Og jeg er en Front-End utvikler fra Bergen",
 
       "Section One Read": "Les Mer",
-      "Section One Description":
-        "Jeg er 24 år og har drevet med datamaskiner i lang tid, liker gaming og video redigering. Jobber mest med React nå, begynte med HTML, CSS og JS.",
+      "Section One Description": `Jeg er ${between} år og har drevet med datamaskiner i lang tid, liker gaming og video redigering. Jobber mest med React nå, begynte med HTML, CSS og JS.`,
 
       "Projects MyProjects": "Mine Prosjekter",
       "Projects Visit": "Besøk",
